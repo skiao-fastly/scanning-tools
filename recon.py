@@ -30,6 +30,3 @@ elif tool_choice.lower() == "3":
 else:
     print("Invalid tool choice. Please enter 'gobuster' or 'ffuf'.")
     exit()
-
-# Execute the command
-
