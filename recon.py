@@ -17,7 +17,7 @@ wordlist_file = "~/Documents/Tools/SecLists/Discovery/Web-Content/common.txt"
 
 # Construct the command based on the tool choice
 if tool_choice.lower() == "1":
-    command = f"gobuster dir -u {url} -w {wordlist_file}"
+    command = f"gobuster dir -u {url} -w {wordlist_file} --output dirbuster.txt"
     os.system(command)
 elif tool_choice.lower() == "2":
     command = f"ffuf -u {url}/FUZZ -w {wordlist_file}"
